@@ -14,7 +14,15 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.facebook-wrapper {
+    display: flex;
+    height: 840px;
     justify-content: center;
+    align-items: center;
 }
 
 .facebook-info {
@@ -23,6 +31,7 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 700px;
+    margin-left: 10px;
 }
 
 .facebook-info img{
@@ -148,15 +157,24 @@ body {
     text-decoration: underline;
 }
 
-
-/* media queries */
-
-@media (max-width: 1450px) {
-    .facebook-info {
-        margin-left: 10px;
-    }
+footer{
+    background-color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 1em rgb(201, 201, 201);
 }
 
+footer .footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+    width: 100%;
+}
+
+
+/* media queries */
 
 @media (max-width: 1085px) {
     .facebook-msg {
@@ -167,9 +185,11 @@ body {
 
 @media (max-width: 910px) {
     body {
-        flex-direction: column;
-        align-items: center;
         min-width: 500px;
+    }
+
+    .facebook-wrapper {
+        flex-direction: column;
     }
 
     .facebook-info {
