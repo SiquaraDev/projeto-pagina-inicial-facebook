@@ -95,16 +95,13 @@ body {
     border: 1px solid rgb(0,120,255);
     justify-content: center;
     align-items: center;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
 }
 
 .enter-button:hover {
     background-color: rgb(0,105,255);
-}
-
-.enter-button a {
-    font-size: 20px;
-    color: white;
-    font-weight: bold;
 }
 
 .link-blue {
@@ -127,16 +124,13 @@ body {
     border: 1px solid rgb(0, 172, 14);
     justify-content: center;
     align-items: center;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
 }
 
 .new-account-button:hover {
     background-color: rgb(0, 156, 14);
-}
-
-.new-account-button a {
-    font-size: 16px;
-    color: white;
-    font-weight: bold;
 }
 
 .text {
@@ -152,4 +146,39 @@ body {
 
 .text a:hover {
     text-decoration: underline;
+}
+
+
+/* media queries */
+
+@media (max-width: 1450px) {
+    .facebook-info {
+        margin-left: 10px;
+    }
+}
+
+
+@media (max-width: 1085px) {
+    .facebook-msg {
+        font-size: 25px;
+    }
+}
+
+
+@media (max-width: 910px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+        min-width: 500px;
+    }
+
+    .facebook-info {
+        align-items: center;
+        width: 100%;
+    }
+
+    .facebook-msg {
+        margin-left: 0;
+        text-align: center;
+    }
 }
